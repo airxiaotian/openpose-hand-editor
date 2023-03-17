@@ -5,16 +5,17 @@ import cv2
 
 import gradio as gr
 
+
+from openpose.body import Body
+from openpose.hand import Hand
+from openpose import util
+
 import modules.scripts as scripts
 from modules import script_callbacks
 from modules.shared import opts
 from modules.paths import models_path
 
 from basicsr.utils.download_util import load_file_from_url
-
-from scripts.openpose.body import Body
-from scripts.openpose.hand import Hand
-from scripts.openpose import util
 
 body_estimation = None
 presets_file = os.path.join(scripts.basedir(), "presets.json")
