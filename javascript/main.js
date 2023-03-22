@@ -515,7 +515,6 @@ function initCanvas(elem) {
         .querySelector('#hide_json')
         .querySelector('textarea')
         .value.replaceAll("'", '"');
-      console.log(raw);
       const json = JSON.parse(raw);
       let candidate = json['candidate'];
       let subset = json['subset'];
@@ -536,7 +535,6 @@ function initCanvas(elem) {
       for (hand_peak of hand_peaks) {
         li.push(hand_peak);
       }
-      console.log(li);
       setPose(li);
 
       const fileReader = new FileReader();
