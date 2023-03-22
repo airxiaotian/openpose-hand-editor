@@ -64,7 +64,7 @@ class Script(scripts.Script):
         super().__init__()
 
     def title(self):
-        return "OpenPose Editor"
+        return "OpenPose Hand Editor"
 
     def show(self, is_img2img):
         return scripts.AlwaysVisible
@@ -202,7 +202,7 @@ def on_ui_tabs():
         preset_list.change(lambda selected: json.dumps(
             presets[selected]), preset_list, preset)
 
-    return [(openpose_editor, "OpenPose Editor", "openpose_editor")]
+    return [(openpose_editor, "OpenPose Hand Editor", "openpose_editor")]
 
 
 script_callbacks.on_ui_tabs(on_ui_tabs)
