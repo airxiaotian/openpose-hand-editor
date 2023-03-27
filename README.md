@@ -1,7 +1,7 @@
 ## Openpose hand Editor
 
 
-![image](./images/1679468900204.jpg)
+![image](./images/1679909479219.jpg)
 
 this is a repository copied from [openpose-editor](https://github.com/fkunn1326/openpose-editor) used as a plugin of [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
