@@ -12,9 +12,9 @@ from modules.paths import models_path
 
 from basicsr.utils.download_util import load_file_from_url
 
-from scripts.openpose.body import Body
-from scripts.openpose.hand import Hand
-from scripts.openpose import util
+from scripts.openpose_hand.body import Body
+from scripts.openpose_hand.hand import Hand
+from scripts.openpose_hand import util
 
 body_estimation = None
 hand_estimation = None
